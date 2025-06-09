@@ -1,0 +1,1052 @@
+[
+    {
+      "ville1": "Paris",
+      "ville2": "Lyon",
+      "distance_km": 751
+    },
+    {
+      "ville1": "Paris",
+      "ville2": "Marseille",
+      "distance_km": 720
+    },
+    {
+      "ville1": "Paris",
+      "ville2": "Toulouse",
+      "distance_km": 205
+    },
+    {
+      "ville1": "Paris",
+      "ville2": "Nice",
+      "distance_km": 897
+    },
+    {
+      "ville1": "Paris",
+      "ville2": "Nantes",
+      "distance_km": 660
+    },
+    {
+      "ville1": "Paris",
+      "ville2": "Strasbourg",
+      "distance_km": 674
+    },
+    {
+      "ville1": "Paris",
+      "ville2": "Montpellier",
+      "distance_km": 411
+    },
+    {
+      "ville1": "Paris",
+      "ville2": "Bordeaux",
+      "distance_km": 546
+    },
+    {
+      "ville1": "Paris",
+      "ville2": "Lille",
+      "distance_km": 1000
+    },
+    {
+      "ville1": "Paris",
+      "ville2": "Rennes",
+      "distance_km": 289
+    },
+    {
+      "ville1": "Paris",
+      "ville2": "Reims",
+      "distance_km": 914
+    },
+    {
+      "ville1": "Paris",
+      "ville2": "Le Havre",
+      "distance_km": 126
+    },
+    {
+      "ville1": "Paris",
+      "ville2": "Saint-Étienne",
+      "distance_km": 657
+    },
+    {
+      "ville1": "Paris",
+      "ville2": "Grenoble",
+      "distance_km": 333
+    },
+    {
+      "ville1": "Lyon",
+      "ville2": "Paris",
+      "distance_km": 925
+    },
+    {
+      "ville1": "Lyon",
+      "ville2": "Marseille",
+      "distance_km": 510
+    },
+    {
+      "ville1": "Lyon",
+      "ville2": "Toulouse",
+      "distance_km": 186
+    },
+    {
+      "ville1": "Lyon",
+      "ville2": "Nice",
+      "distance_km": 962
+    },
+    {
+      "ville1": "Lyon",
+      "ville2": "Nantes",
+      "distance_km": 113
+    },
+    {
+      "ville1": "Lyon",
+      "ville2": "Strasbourg",
+      "distance_km": 120
+    },
+    {
+      "ville1": "Lyon",
+      "ville2": "Montpellier",
+      "distance_km": 412
+    },
+    {
+      "ville1": "Lyon",
+      "ville2": "Bordeaux",
+      "distance_km": 847
+    },
+    {
+      "ville1": "Lyon",
+      "ville2": "Lille",
+      "distance_km": 846
+    },
+    {
+      "ville1": "Lyon",
+      "ville2": "Rennes",
+      "distance_km": 395
+    },
+    {
+      "ville1": "Lyon",
+      "ville2": "Reims",
+      "distance_km": 642
+    },
+    {
+      "ville1": "Lyon",
+      "ville2": "Le Havre",
+      "distance_km": 414
+    },
+    {
+      "ville1": "Lyon",
+      "ville2": "Saint-Étienne",
+      "distance_km": 919
+    },
+    {
+      "ville1": "Lyon",
+      "ville2": "Grenoble",
+      "distance_km": 702
+    },
+    {
+      "ville1": "Marseille",
+      "ville2": "Paris",
+      "distance_km": 830
+    },
+    {
+      "ville1": "Marseille",
+      "ville2": "Lyon",
+      "distance_km": 389
+    },
+    {
+      "ville1": "Marseille",
+      "ville2": "Toulouse",
+      "distance_km": 377
+    },
+    {
+      "ville1": "Marseille",
+      "ville2": "Nice",
+      "distance_km": 880
+    },
+    {
+      "ville1": "Marseille",
+      "ville2": "Nantes",
+      "distance_km": 115
+    },
+    {
+      "ville1": "Marseille",
+      "ville2": "Strasbourg",
+      "distance_km": 342
+    },
+    {
+      "ville1": "Marseille",
+      "ville2": "Montpellier",
+      "distance_km": 547
+    },
+    {
+      "ville1": "Marseille",
+      "ville2": "Bordeaux",
+      "distance_km": 413
+    },
+    {
+      "ville1": "Marseille",
+      "ville2": "Lille",
+      "distance_km": 445
+    },
+    {
+      "ville1": "Marseille",
+      "ville2": "Rennes",
+      "distance_km": 815
+    },
+    {
+      "ville1": "Marseille",
+      "ville2": "Reims",
+      "distance_km": 676
+    },
+    {
+      "ville1": "Marseille",
+      "ville2": "Le Havre",
+      "distance_km": 852
+    },
+    {
+      "ville1": "Marseille",
+      "ville2": "Saint-Étienne",
+      "distance_km": 956
+    },
+    {
+      "ville1": "Marseille",
+      "ville2": "Grenoble",
+      "distance_km": 138
+    },
+    {
+      "ville1": "Toulouse",
+      "ville2": "Paris",
+      "distance_km": 306
+    },
+    {
+      "ville1": "Toulouse",
+      "ville2": "Lyon",
+      "distance_km": 904
+    },
+    {
+      "ville1": "Toulouse",
+      "ville2": "Marseille",
+      "distance_km": 793
+    },
+    {
+      "ville1": "Toulouse",
+      "ville2": "Nice",
+      "distance_km": 800
+    },
+    {
+      "ville1": "Toulouse",
+      "ville2": "Nantes",
+      "distance_km": 749
+    },
+    {
+      "ville1": "Toulouse",
+      "ville2": "Strasbourg",
+      "distance_km": 677
+    },
+    {
+      "ville1": "Toulouse",
+      "ville2": "Montpellier",
+      "distance_km": 181
+    },
+    {
+      "ville1": "Toulouse",
+      "ville2": "Bordeaux",
+      "distance_km": 971
+    },
+    {
+      "ville1": "Toulouse",
+      "ville2": "Lille",
+      "distance_km": 946
+    },
+    {
+      "ville1": "Toulouse",
+      "ville2": "Rennes",
+      "distance_km": 568
+    },
+    {
+      "ville1": "Toulouse",
+      "ville2": "Reims",
+      "distance_km": 558
+    },
+    {
+      "ville1": "Toulouse",
+      "ville2": "Le Havre",
+      "distance_km": 189
+    },
+    {
+      "ville1": "Toulouse",
+      "ville2": "Saint-Étienne",
+      "distance_km": 693
+    },
+    {
+      "ville1": "Toulouse",
+      "ville2": "Grenoble",
+      "distance_km": 754
+    },
+    {
+      "ville1": "Nice",
+      "ville2": "Paris",
+      "distance_km": 900
+    },
+    {
+      "ville1": "Nice",
+      "ville2": "Lyon",
+      "distance_km": 288
+    },
+    {
+      "ville1": "Nice",
+      "ville2": "Marseille",
+      "distance_km": 833
+    },
+    {
+      "ville1": "Nice",
+      "ville2": "Toulouse",
+      "distance_km": 774
+    },
+    {
+      "ville1": "Nice",
+      "ville2": "Nantes",
+      "distance_km": 103
+    },
+    {
+      "ville1": "Nice",
+      "ville2": "Strasbourg",
+      "distance_km": 579
+    },
+    {
+      "ville1": "Nice",
+      "ville2": "Montpellier",
+      "distance_km": 744
+    },
+    {
+      "ville1": "Nice",
+      "ville2": "Bordeaux",
+      "distance_km": 977
+    },
+    {
+      "ville1": "Nice",
+      "ville2": "Lille",
+      "distance_km": 662
+    },
+    {
+      "ville1": "Nice",
+      "ville2": "Rennes",
+      "distance_km": 375
+    },
+    {
+      "ville1": "Nice",
+      "ville2": "Reims",
+      "distance_km": 451
+    },
+    {
+      "ville1": "Nice",
+      "ville2": "Le Havre",
+      "distance_km": 160
+    },
+    {
+      "ville1": "Nice",
+      "ville2": "Saint-Étienne",
+      "distance_km": 716
+    },
+    {
+      "ville1": "Nice",
+      "ville2": "Grenoble",
+      "distance_km": 234
+    },
+    {
+      "ville1": "Nantes",
+      "ville2": "Paris",
+      "distance_km": 288
+    },
+    {
+      "ville1": "Nantes",
+      "ville2": "Lyon",
+      "distance_km": 177
+    },
+    {
+      "ville1": "Nantes",
+      "ville2": "Marseille",
+      "distance_km": 110
+    },
+    {
+      "ville1": "Nantes",
+      "ville2": "Toulouse",
+      "distance_km": 809
+    },
+    {
+      "ville1": "Nantes",
+      "ville2": "Nice",
+      "distance_km": 277
+    },
+    {
+      "ville1": "Nantes",
+      "ville2": "Strasbourg",
+      "distance_km": 741
+    },
+    {
+      "ville1": "Nantes",
+      "ville2": "Montpellier",
+      "distance_km": 730
+    },
+    {
+      "ville1": "Nantes",
+      "ville2": "Bordeaux",
+      "distance_km": 686
+    },
+    {
+      "ville1": "Nantes",
+      "ville2": "Lille",
+      "distance_km": 996
+    },
+    {
+      "ville1": "Nantes",
+      "ville2": "Rennes",
+      "distance_km": 583
+    },
+    {
+      "ville1": "Nantes",
+      "ville2": "Reims",
+      "distance_km": 714
+    },
+    {
+      "ville1": "Nantes",
+      "ville2": "Le Havre",
+      "distance_km": 847
+    },
+    {
+      "ville1": "Nantes",
+      "ville2": "Saint-Étienne",
+      "distance_km": 902
+    },
+    {
+      "ville1": "Nantes",
+      "ville2": "Grenoble",
+      "distance_km": 570
+    },
+    {
+      "ville1": "Strasbourg",
+      "ville2": "Paris",
+      "distance_km": 687
+    },
+    {
+      "ville1": "Strasbourg",
+      "ville2": "Lyon",
+      "distance_km": 952
+    },
+    {
+      "ville1": "Strasbourg",
+      "ville2": "Marseille",
+      "distance_km": 873
+    },
+    {
+      "ville1": "Strasbourg",
+      "ville2": "Toulouse",
+      "distance_km": 731
+    },
+    {
+      "ville1": "Strasbourg",
+      "ville2": "Nice",
+      "distance_km": 781
+    },
+    {
+      "ville1": "Strasbourg",
+      "ville2": "Nantes",
+      "distance_km": 624
+    },
+    {
+      "ville1": "Strasbourg",
+      "ville2": "Montpellier",
+      "distance_km": 117
+    },
+    {
+      "ville1": "Strasbourg",
+      "ville2": "Bordeaux",
+      "distance_km": 589
+    },
+    {
+      "ville1": "Strasbourg",
+      "ville2": "Lille",
+      "distance_km": 221
+    },
+    {
+      "ville1": "Strasbourg",
+      "ville2": "Rennes",
+      "distance_km": 239
+    },
+    {
+      "ville1": "Strasbourg",
+      "ville2": "Reims",
+      "distance_km": 666
+    },
+    {
+      "ville1": "Strasbourg",
+      "ville2": "Le Havre",
+      "distance_km": 702
+    },
+    {
+      "ville1": "Strasbourg",
+      "ville2": "Saint-Étienne",
+      "distance_km": 977
+    },
+    {
+      "ville1": "Strasbourg",
+      "ville2": "Grenoble",
+      "distance_km": 218
+    },
+    {
+      "ville1": "Montpellier",
+      "ville2": "Paris",
+      "distance_km": 232
+    },
+    {
+      "ville1": "Montpellier",
+      "ville2": "Lyon",
+      "distance_km": 155
+    },
+    {
+      "ville1": "Montpellier",
+      "ville2": "Marseille",
+      "distance_km": 535
+    },
+    {
+      "ville1": "Montpellier",
+      "ville2": "Toulouse",
+      "distance_km": 714
+    },
+    {
+      "ville1": "Montpellier",
+      "ville2": "Nice",
+      "distance_km": 716
+    },
+    {
+      "ville1": "Montpellier",
+      "ville2": "Nantes",
+      "distance_km": 798
+    },
+    {
+      "ville1": "Montpellier",
+      "ville2": "Strasbourg",
+      "distance_km": 681
+    },
+    {
+      "ville1": "Montpellier",
+      "ville2": "Bordeaux",
+      "distance_km": 499
+    },
+    {
+      "ville1": "Montpellier",
+      "ville2": "Lille",
+      "distance_km": 238
+    },
+    {
+      "ville1": "Montpellier",
+      "ville2": "Rennes",
+      "distance_km": 154
+    },
+    {
+      "ville1": "Montpellier",
+      "ville2": "Reims",
+      "distance_km": 862
+    },
+    {
+      "ville1": "Montpellier",
+      "ville2": "Le Havre",
+      "distance_km": 943
+    },
+    {
+      "ville1": "Montpellier",
+      "ville2": "Saint-Étienne",
+      "distance_km": 470
+    },
+    {
+      "ville1": "Montpellier",
+      "ville2": "Grenoble",
+      "distance_km": 217
+    },
+    {
+      "ville1": "Bordeaux",
+      "ville2": "Paris",
+      "distance_km": 886
+    },
+    {
+      "ville1": "Bordeaux",
+      "ville2": "Lyon",
+      "distance_km": 561
+    },
+    {
+      "ville1": "Bordeaux",
+      "ville2": "Marseille",
+      "distance_km": 114
+    },
+    {
+      "ville1": "Bordeaux",
+      "ville2": "Toulouse",
+      "distance_km": 858
+    },
+    {
+      "ville1": "Bordeaux",
+      "ville2": "Nice",
+      "distance_km": 157
+    },
+    {
+      "ville1": "Bordeaux",
+      "ville2": "Nantes",
+      "distance_km": 196
+    },
+    {
+      "ville1": "Bordeaux",
+      "ville2": "Strasbourg",
+      "distance_km": 515
+    },
+    {
+      "ville1": "Bordeaux",
+      "ville2": "Montpellier",
+      "distance_km": 958
+    },
+    {
+      "ville1": "Bordeaux",
+      "ville2": "Lille",
+      "distance_km": 776
+    },
+    {
+      "ville1": "Bordeaux",
+      "ville2": "Rennes",
+      "distance_km": 687
+    },
+    {
+      "ville1": "Bordeaux",
+      "ville2": "Reims",
+      "distance_km": 531
+    },
+    {
+      "ville1": "Bordeaux",
+      "ville2": "Le Havre",
+      "distance_km": 737
+    },
+    {
+      "ville1": "Bordeaux",
+      "ville2": "Saint-Étienne",
+      "distance_km": 993
+    },
+    {
+      "ville1": "Bordeaux",
+      "ville2": "Grenoble",
+      "distance_km": 573
+    },
+    {
+      "ville1": "Lille",
+      "ville2": "Paris",
+      "distance_km": 622
+    },
+    {
+      "ville1": "Lille",
+      "ville2": "Lyon",
+      "distance_km": 116
+    },
+    {
+      "ville1": "Lille",
+      "ville2": "Marseille",
+      "distance_km": 641
+    },
+    {
+      "ville1": "Lille",
+      "ville2": "Toulouse",
+      "distance_km": 241
+    },
+    {
+      "ville1": "Lille",
+      "ville2": "Nice",
+      "distance_km": 449
+    },
+    {
+      "ville1": "Lille",
+      "ville2": "Nantes",
+      "distance_km": 262
+    },
+    {
+      "ville1": "Lille",
+      "ville2": "Strasbourg",
+      "distance_km": 783
+    },
+    {
+      "ville1": "Lille",
+      "ville2": "Montpellier",
+      "distance_km": 674
+    },
+    {
+      "ville1": "Lille",
+      "ville2": "Bordeaux",
+      "distance_km": 501
+    },
+    {
+      "ville1": "Lille",
+      "ville2": "Rennes",
+      "distance_km": 433
+    },
+    {
+      "ville1": "Lille",
+      "ville2": "Reims",
+      "distance_km": 172
+    },
+    {
+      "ville1": "Lille",
+      "ville2": "Le Havre",
+      "distance_km": 399
+    },
+    {
+      "ville1": "Lille",
+      "ville2": "Saint-Étienne",
+      "distance_km": 658
+    },
+    {
+      "ville1": "Lille",
+      "ville2": "Grenoble",
+      "distance_km": 684
+    },
+    {
+      "ville1": "Rennes",
+      "ville2": "Paris",
+      "distance_km": 243
+    },
+    {
+      "ville1": "Rennes",
+      "ville2": "Lyon",
+      "distance_km": 597
+    },
+    {
+      "ville1": "Rennes",
+      "ville2": "Marseille",
+      "distance_km": 770
+    },
+    {
+      "ville1": "Rennes",
+      "ville2": "Toulouse",
+      "distance_km": 343
+    },
+    {
+      "ville1": "Rennes",
+      "ville2": "Nice",
+      "distance_km": 878
+    },
+    {
+      "ville1": "Rennes",
+      "ville2": "Nantes",
+      "distance_km": 128
+    },
+    {
+      "ville1": "Rennes",
+      "ville2": "Strasbourg",
+      "distance_km": 872
+    },
+    {
+      "ville1": "Rennes",
+      "ville2": "Montpellier",
+      "distance_km": 945
+    },
+    {
+      "ville1": "Rennes",
+      "ville2": "Bordeaux",
+      "distance_km": 716
+    },
+    {
+      "ville1": "Rennes",
+      "ville2": "Lille",
+      "distance_km": 716
+    },
+    {
+      "ville1": "Rennes",
+      "ville2": "Reims",
+      "distance_km": 694
+    },
+    {
+      "ville1": "Rennes",
+      "ville2": "Le Havre",
+      "distance_km": 163
+    },
+    {
+      "ville1": "Rennes",
+      "ville2": "Saint-Étienne",
+      "distance_km": 653
+    },
+    {
+      "ville1": "Rennes",
+      "ville2": "Grenoble",
+      "distance_km": 711
+    },
+    {
+      "ville1": "Reims",
+      "ville2": "Paris",
+      "distance_km": 729
+    },
+    {
+      "ville1": "Reims",
+      "ville2": "Lyon",
+      "distance_km": 522
+    },
+    {
+      "ville1": "Reims",
+      "ville2": "Marseille",
+      "distance_km": 976
+    },
+    {
+      "ville1": "Reims",
+      "ville2": "Toulouse",
+      "distance_km": 359
+    },
+    {
+      "ville1": "Reims",
+      "ville2": "Nice",
+      "distance_km": 328
+    },
+    {
+      "ville1": "Reims",
+      "ville2": "Nantes",
+      "distance_km": 392
+    },
+    {
+      "ville1": "Reims",
+      "ville2": "Strasbourg",
+      "distance_km": 306
+    },
+    {
+      "ville1": "Reims",
+      "ville2": "Montpellier",
+      "distance_km": 784
+    },
+    {
+      "ville1": "Reims",
+      "ville2": "Bordeaux",
+      "distance_km": 343
+    },
+    {
+      "ville1": "Reims",
+      "ville2": "Lille",
+      "distance_km": 238
+    },
+    {
+      "ville1": "Reims",
+      "ville2": "Rennes",
+      "distance_km": 274
+    },
+    {
+      "ville1": "Reims",
+      "ville2": "Le Havre",
+      "distance_km": 986
+    },
+    {
+      "ville1": "Reims",
+      "ville2": "Saint-Étienne",
+      "distance_km": 762
+    },
+    {
+      "ville1": "Reims",
+      "ville2": "Grenoble",
+      "distance_km": 653
+    },
+    {
+      "ville1": "Le Havre",
+      "ville2": "Paris",
+      "distance_km": 651
+    },
+    {
+      "ville1": "Le Havre",
+      "ville2": "Lyon",
+      "distance_km": 695
+    },
+    {
+      "ville1": "Le Havre",
+      "ville2": "Marseille",
+      "distance_km": 229
+    },
+    {
+      "ville1": "Le Havre",
+      "ville2": "Toulouse",
+      "distance_km": 743
+    },
+    {
+      "ville1": "Le Havre",
+      "ville2": "Nice",
+      "distance_km": 976
+    },
+    {
+      "ville1": "Le Havre",
+      "ville2": "Nantes",
+      "distance_km": 947
+    },
+    {
+      "ville1": "Le Havre",
+      "ville2": "Strasbourg",
+      "distance_km": 825
+    },
+    {
+      "ville1": "Le Havre",
+      "ville2": "Montpellier",
+      "distance_km": 192
+    },
+    {
+      "ville1": "Le Havre",
+      "ville2": "Bordeaux",
+      "distance_km": 738
+    },
+    {
+      "ville1": "Le Havre",
+      "ville2": "Lille",
+      "distance_km": 366
+    },
+    {
+      "ville1": "Le Havre",
+      "ville2": "Rennes",
+      "distance_km": 439
+    },
+    {
+      "ville1": "Le Havre",
+      "ville2": "Reims",
+      "distance_km": 803
+    },
+    {
+      "ville1": "Le Havre",
+      "ville2": "Saint-Étienne",
+      "distance_km": 291
+    },
+    {
+      "ville1": "Le Havre",
+      "ville2": "Grenoble",
+      "distance_km": 408
+    },
+    {
+      "ville1": "Saint-Étienne",
+      "ville2": "Paris",
+      "distance_km": 262
+    },
+    {
+      "ville1": "Saint-Étienne",
+      "ville2": "Lyon",
+      "distance_km": 152
+    },
+    {
+      "ville1": "Saint-Étienne",
+      "ville2": "Marseille",
+      "distance_km": 940
+    },
+    {
+      "ville1": "Saint-Étienne",
+      "ville2": "Toulouse",
+      "distance_km": 725
+    },
+    {
+      "ville1": "Saint-Étienne",
+      "ville2": "Nice",
+      "distance_km": 497
+    },
+    {
+      "ville1": "Saint-Étienne",
+      "ville2": "Nantes",
+      "distance_km": 281
+    },
+    {
+      "ville1": "Saint-Étienne",
+      "ville2": "Strasbourg",
+      "distance_km": 296
+    },
+    {
+      "ville1": "Saint-Étienne",
+      "ville2": "Montpellier",
+      "distance_km": 228
+    },
+    {
+      "ville1": "Saint-Étienne",
+      "ville2": "Bordeaux",
+      "distance_km": 392
+    },
+    {
+      "ville1": "Saint-Étienne",
+      "ville2": "Lille",
+      "distance_km": 394
+    },
+    {
+      "ville1": "Saint-Étienne",
+      "ville2": "Rennes",
+      "distance_km": 843
+    },
+    {
+      "ville1": "Saint-Étienne",
+      "ville2": "Reims",
+      "distance_km": 302
+    },
+    {
+      "ville1": "Saint-Étienne",
+      "ville2": "Le Havre",
+      "distance_km": 274
+    },
+    {
+      "ville1": "Saint-Étienne",
+      "ville2": "Grenoble",
+      "distance_km": 192
+    },
+    {
+      "ville1": "Grenoble",
+      "ville2": "Paris",
+      "distance_km": 147
+    },
+    {
+      "ville1": "Grenoble",
+      "ville2": "Lyon",
+      "distance_km": 265
+    },
+    {
+      "ville1": "Grenoble",
+      "ville2": "Marseille",
+      "distance_km": 916
+    },
+    {
+      "ville1": "Grenoble",
+      "ville2": "Toulouse",
+      "distance_km": 503
+    },
+    {
+      "ville1": "Grenoble",
+      "ville2": "Nice",
+      "distance_km": 451
+    },
+    {
+      "ville1": "Grenoble",
+      "ville2": "Nantes",
+      "distance_km": 473
+    },
+    {
+      "ville1": "Grenoble",
+      "ville2": "Strasbourg",
+      "distance_km": 264
+    },
+    {
+      "ville1": "Grenoble",
+      "ville2": "Montpellier",
+      "distance_km": 867
+    },
+    {
+      "ville1": "Grenoble",
+      "ville2": "Bordeaux",
+      "distance_km": 657
+    },
+    {
+      "ville1": "Grenoble",
+      "ville2": "Lille",
+      "distance_km": 838
+    },
+    {
+      "ville1": "Grenoble",
+      "ville2": "Rennes",
+      "distance_km": 813
+    },
+    {
+      "ville1": "Grenoble",
+      "ville2": "Reims",
+      "distance_km": 938
+    },
+    {
+      "ville1": "Grenoble",
+      "ville2": "Le Havre",
+      "distance_km": 310
+    },
+    {
+      "ville1": "Grenoble",
+      "ville2": "Saint-Étienne",
+      "distance_km": 601
+    }
+  ]
