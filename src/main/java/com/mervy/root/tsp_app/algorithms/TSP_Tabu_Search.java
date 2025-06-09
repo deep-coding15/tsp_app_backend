@@ -9,7 +9,6 @@ import java.util.List;
 import com.mervy.root.tsp_app.utils.JsonTo2D;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
-import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 @Getter
@@ -33,7 +32,7 @@ public class TSP_Tabu_Search{
     private static final int TABU_TENURE = distanceMatrix[0].length;
     private static final int MAX_ITERATIONS = 100;
 
-    public static int shortestPathTSP(String cityStart, String cityEnd) throws FileNotFoundException {
+    public static List<Integer> shortestPathTSP(String cityStart, String cityEnd) throws FileNotFoundException {
         List<Integer> currentSolution  = generateInitialSolution(cityStart, cityEnd);
         List<Integer> bestSolution = new ArrayList<>(currentSolution);
         int bestDistance = calculateDistance(bestSolution);
@@ -72,7 +71,7 @@ public class TSP_Tabu_Search{
         }
 
         System.out.println("Best Solution: " + toStringSolution(bestSolution) + " Best Distance: " + bestDistance);
-        return bestDistance;
+        return bestSolution;
     }
 
     private static String toStringSolution(List<Integer> solution){
