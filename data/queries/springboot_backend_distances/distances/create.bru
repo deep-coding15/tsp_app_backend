@@ -1,0 +1,19 @@
+meta {
+  name: create
+  type: http
+  seq: 1
+}
+
+post {
+  url: http://localhost:8081/distances
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "ville1": "cupidatat",
+    "ville2": "ipsum",
+    "distance_km": 793
+  }
+}

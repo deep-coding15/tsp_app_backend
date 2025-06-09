@@ -1,0 +1,9 @@
+{
+  "version": "1",
+  "name": "springboot_backend_distances",
+  "type": "collection",
+  "ignore": [
+    "node_modules",
+    ".git"
+  ]
+}

@@ -1,0 +1,8 @@
+spring:
+    application:
+        name: tsp_app
+    jpa:
+        hibernate:
+            ddl-auto: validate
+server:
+    port: 8081

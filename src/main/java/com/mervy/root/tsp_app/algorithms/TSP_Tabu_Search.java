@@ -15,7 +15,6 @@ import lombok.Setter;
 @Getter
 @Setter
 @AllArgsConstructor
-@NoArgsConstructor
 public class TSP_Tabu_Search{
 
     //Matrice des distances entre villes
