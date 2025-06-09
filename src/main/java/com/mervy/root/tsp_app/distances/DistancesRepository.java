@@ -11,5 +11,5 @@ import org.springframework.data.jpa.repository.JpaRepository;
  * count()               // Retourne le nombre total d'entités
  * existsById(id)        // Vérifie si une entité existe avec cet ID*/
 
-public interface DistancesRepository extends JpaRepository<DistanceFormat, Integer> {
+public interface DistancesRepository extends JpaRepository<DistanceFormat, Long> {
 }

@@ -15,7 +15,7 @@ import java.util.List;
 public class DistancesController {
     private final DistancesService distancesService;
 
-    @PostMapping
+    @PostMapping(consumes = MediaType.APPLICATION_JSON_VALUE)
     public void create(@RequestBody DistanceFormat distance){
         this.distancesService.create(distance);
     }
@@ -23,5 +23,21 @@ public class DistancesController {
     @GetMapping(produces = MediaType.APPLICATION_JSON_VALUE)
     public List<DistanceFormat> search() {
         return this.distancesService.search();
+    }
+
+    @GetMapping(path = "{id}")
+    public DistanceFormat read(@PathVariable Long id) {
+        return this.distancesService.read(id);
+    }
+
+
+    @PutMapping(path = "{id}", consumes = MediaType.APPLICATION_JSON_VALUE)
+    public DistanceFormat update(@PathVariable Long id,  @RequestBody DistanceFormat distance) {
+        return this.distancesService.update(id, distance);
+    }
+
+    @DeleteMapping(path = "{id}")
+    public void delete(@PathVariable Long id) {
+        this.distancesService.delete(id);
     }
 }
