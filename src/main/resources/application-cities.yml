@@ -1,0 +1,18 @@
+logging:
+    level:
+        com.deep-coding15: trace
+
+spring:
+    application:
+        name: tsp_app
+    datasource:
+        url: jdbc:mysql://localhost:3306/spring_boot_distances
+        username: root
+        password: ""  # Pas de mot de passe
+        driver-class-name: com.mysql.cj.jdbc.Driver
+
+    jpa:
+        show-sql: true  #affiches les requetes sql
+        hibernate:
+            ddl-auto: validate #valider que les données sont bonnes
+        database-platform: org.hibernate.dialect.MySQL8Dialect
