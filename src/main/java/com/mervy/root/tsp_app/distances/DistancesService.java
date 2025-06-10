@@ -37,7 +37,7 @@ public class DistancesService {
         distanceInDatabase.setVille1(distance.getVille1());
         distanceInDatabase.setVille2(distance.getVille2());
         distanceInDatabase.setDistance_km(distance.getDistance_km());
-        distanceInDatabase.setTime(distance.getTime());
+        //distanceInDatabase.setTime(distance.getTime());
         return this.distancesRepository.save(distanceInDatabase);
     }
 

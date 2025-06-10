@@ -12,6 +12,7 @@ import java.util.List;
 @RequestMapping("distances")
 @RequiredArgsConstructor
 @Slf4j
+@CrossOrigin(origins = "http://localhost:3000/")
 public class DistancesController {
     private final DistancesService distancesService;
 

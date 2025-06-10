@@ -23,5 +23,5 @@ public class DistanceFormat {
     private String ville1;
     private String ville2;
     private int distance_km;
-    private LocalDateTime time;
+    //private LocalDateTime time;
 }

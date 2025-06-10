@@ -20,9 +20,12 @@ public class TSP_Tabu_Search{
     private static final int[][] distanceMatrix;
     private static final JsonTo2D jsonTo2D = new JsonTo2D();
     private static final String FILENAME = "src/main/resources/distances_villes.json";
+    private static List<String> allCities ;
+
     static {
         try {
             distanceMatrix = jsonTo2D.convertJsonTo2D(FILENAME);
+            allCities = jsonTo2D.readJsonTSP_FileSorted(FILENAME);
         } catch (FileNotFoundException e) {
             throw new RuntimeException(e);
         }
@@ -32,6 +35,23 @@ public class TSP_Tabu_Search{
     private static final int TABU_TENURE = distanceMatrix[0].length;
     private static final int MAX_ITERATIONS = 100;
 
+    public static void main(String[] args) throws FileNotFoundException {
+        String cityStart = "Paris";
+        String cityEnd = "Lyon";
+
+        JsonTo2D jsonTo2D = new JsonTo2D();
+        List<String> cities = jsonTo2D.readJsonTSP_FileSorted("src/main/resources/distances_villes.json");
+        int firstCityPosition = cities.indexOf(cityStart);
+        int lastCityPosition = cities.indexOf(cityEnd);
+        System.out.println("city start: " + firstCityPosition + " city end: " + lastCityPosition);
+
+        List<Integer> shortest = shortestPathTSP(cityStart, cityEnd);
+        System.out.println("solution: " + shortest);
+
+        int distanceMin = calculateDistance(shortest);
+        System.out.println("distance min: " + distanceMin);
+    }
+
     public static List<Integer> shortestPathTSP(String cityStart, String cityEnd) throws FileNotFoundException {
         List<Integer> currentSolution  = generateInitialSolution(cityStart, cityEnd);
         List<Integer> bestSolution = new ArrayList<>(currentSolution);
@@ -40,7 +60,7 @@ public class TSP_Tabu_Search{
         LinkedList<String> tabuList = new LinkedList<>();
 
         for (int iter = 0; iter < MAX_ITERATIONS; iter++) {
-            List<List<Integer>> neighbors = generateNeighbors(currentSolution);
+            List<List<Integer>> neighbors = generateNeighbors(currentSolution, cityStart, cityEnd);
             List<Integer> bestNeighbor = null;
             int bestNeighborDistance = Integer.MAX_VALUE;
             String bestMove = "";
@@ -67,7 +87,7 @@ public class TSP_Tabu_Search{
                 tabuList.removeFirst();
             }
 
-            System.out.println("Iter: " + iter + " Cost: " + bestNeighborDistance + " Middle Solution: " + bestNeighbor + " Best Distance: " + bestDistance);
+            System.out.println("Iter: " + iter + " Cost: " + bestNeighborDistance + " Middle Solution: " + bestNeighbor + " Best Distance: " + bestDistance /* + " best solution: " + bestSolution*/);
         }
 
         System.out.println("Best Solution: " + toStringSolution(bestSolution) + " Best Distance: " + bestDistance);
@@ -79,7 +99,7 @@ public class TSP_Tabu_Search{
 
         stringBuilder.append("[");
         for(Integer i : solution){
-            stringBuilder.append(i).append(" ");
+            stringBuilder.append(i).append(", ");
         }
         stringBuilder.append("]");
         return stringBuilder.toString();
@@ -94,13 +114,15 @@ public class TSP_Tabu_Search{
         Collections.shuffle(cities);
         /*todo : attribute to the first and the last the corresponding cities
         todo :  it's mean the first is the city start and the last is the city end*/
-        List<String> allCities = jsonTo2D.readJsonTSP_FileSorted(FILENAME);
+        //List<String> allCities = jsonTo2D.readJsonTSP_FileSorted(FILENAME);
         int firstCity = allCities.indexOf(cityStart);
         int lastCity = allCities.indexOf(cityEnd);
+        System.out.println("In generatedInitialSolution function: " + "first city: " + firstCity + " last city: " + lastCity);
+        System.out.println("In generatedInitialSolution function before : " + cities);
 
-        Collections.swap(cities, 0, firstCity);
-        Collections.swap(cities, lastCity, cities.size() - 1);
-
+        Collections.swap(cities, 0, cities.indexOf(firstCity));
+        Collections.swap(cities, cities.indexOf(lastCity), cities.size() - 1);
+        System.out.println("In generatedInitialSolution function after: " + cities);
         return cities;
     }
 
@@ -110,15 +132,21 @@ public class TSP_Tabu_Search{
      * @param solution : contain an initial solution or a solution that has the lows total distance than the initial solution
      * The neighbors is find were we swap between two element of the existing solution
      */
-    private  static List<List<Integer>> generateNeighbors(List<Integer> solution){
-        List<List<Integer>> neighbors = new ArrayList<List<Integer>>();
-        for (int i = 0; i < (solution.size() - 1); i++) {
-            for (int j = i + 1; j < (solution.size()); j++) {
+    private  static List<List<Integer>> generateNeighbors(List<Integer> solution, String cityStart, String cityEnd) {
+        int firstCity = allCities.indexOf(cityStart);
+        int lastCity = allCities.indexOf(cityEnd);
+
+        List<List<Integer>> neighbors = new ArrayList<>();
+        for (int i = 0; i < (solution.size() - 2); i++) {
+            for (int j = i + 1; j < (solution.size() - 1); j++) {
                 List<Integer> neighbor = new ArrayList<>(solution);
                 Collections.swap(neighbor, i, j);
                 neighbors.add(neighbor);
             }
+            Collections.swap(neighbors.get(i), neighbors.get(i).indexOf(lastCity), (neighbors.get(i).size() - 1));
+            Collections.swap(neighbors.get(i), 0, neighbors.get(i).indexOf(firstCity));
         }
+
         return neighbors;
     }
 
