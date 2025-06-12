@@ -1,35 +1,34 @@
 package com.mervy.root.tsp_app.traveloptimizer.service;
 
-import com.mervy.root.tsp_app.traveloptimizer.model.City;
+import com.mervy.root.tsp_app.traveloptimizer.model.CityRepository;
 import com.mervy.root.tsp_app.traveloptimizer.model.RouteResponse;
+import com.mervy.root.tsp_app.traveloptimizer.model.city.City;
+
+import com.mervy.root.tsp_app.traveloptimizer.model.city.CityService;
+import lombok.Getter;
+import lombok.Setter;
 import org.springframework.stereotype.Service;
 
 import java.util.*;
 
+@Getter
+@Setter
 @Service
-public class TspService {
-    private final Map<String, City> cityMap = new HashMap<>();
+public class TspService extends CityService{
 
-    public TspService() {
-        cityMap.put("Casablanca", new City("Casablanca", 33.5731, -7.5898));
-        cityMap.put("Rabat", new City("Rabat", 34.0209, -6.8416));
-        cityMap.put("Marrakech", new City("Marrakech", 31.6295, -7.9811));
-        cityMap.put("Fès", new City("Fès", 34.0331, -5.0003));
-        cityMap.put("Tanger", new City("Tanger", 35.7595, -5.8339));
-        cityMap.put("Agadir", new City("Agadir", 30.4278, -9.5981));
-        cityMap.put("Oujda", new City("Oujda", 34.6833, -1.9167));
-        cityMap.put("Tétouan", new City("Tétouan", 35.5720, -5.3626));
-        cityMap.put("Nador", new City("Nador", 35.1688, -2.9335));
-        cityMap.put("El Jadida", new City("El Jadida", 33.2333, -8.5000));
-        cityMap.put("Essaouira", new City("Essaouira", 31.5085, -9.7595));
-        cityMap.put("Meknès", new City("Meknès", 33.8950, -5.5547));
-        cityMap.put("Beni Mellal", new City("Beni Mellal", 32.3394, -6.3606));
-        cityMap.put("Errachidia", new City("Errachidia", 31.9311, -4.4241));
-        cityMap.put("Laâyoune", new City("Laâyoune", 27.1253, -13.1625));
+    private final CityRepository cityRepository;
+
+    /**super is the class CityService because TspServices herites of the CityServices class*/
+    public TspService(CityRepository cityRepository) {
+        super(cityRepository);
+        this.cityRepository = cityRepository;
     }
 
-    public List<String> getCityNames() {
-        return new ArrayList<>(cityMap.keySet());
+    private final Map<String, City> cityMap = super.getCityMap();
+
+
+    public Map<String, City> getCities() {
+        return super.getCityMap();
     }
 
     public RouteResponse optimizeRoute(List<String> selectedNames) {

@@ -4,3 +4,5 @@ create table cities (
     latitude DOUBLE NOT NULL ,
     longitude DOUBLE NOT NULL
 );
+
+

@@ -1,6 +1,8 @@
 package com.mervy.root.tsp_app.traveloptimizer.model;
 
 
+import com.mervy.root.tsp_app.traveloptimizer.model.city.City;
+
 import lombok.Getter;
 
 import java.util.List;

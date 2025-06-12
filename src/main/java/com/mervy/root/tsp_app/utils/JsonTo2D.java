@@ -54,10 +54,10 @@ public class JsonTo2D {
         JsonTo2D jsonTo2D = new JsonTo2D();
         int[][]essai = jsonTo2D.convertJsonTo2D("src/main/resources/distances_villes.json");
         System.out.println("Tableau des distances (non symétriques) :");
-        for (int i = 0; i < essai.length; i++) {
+        for (int[] ints : essai) {
             //System.out.print(villes.get(i) + " : ");
             for (int j = 0; j < essai[0].length; j++) {
-                System.out.printf("%d \t ", essai[i][j]);
+                System.out.printf("%d \t ", ints[j]);
             }
             System.out.println();
         }
