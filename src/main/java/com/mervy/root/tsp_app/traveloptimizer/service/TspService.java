@@ -1,11 +1,13 @@
 package com.mervy.root.tsp_app.traveloptimizer.service;
 
+import com.mervy.root.tsp_app.traveloptimizer.algorithms.NearestNeighbors;
+import com.mervy.root.tsp_app.traveloptimizer.algorithms.TwoOpt;
+import com.mervy.root.tsp_app.traveloptimizer.algorithms.utils.DistanceCitiesList;
 import com.mervy.root.tsp_app.traveloptimizer.model.CityRepository;
 import com.mervy.root.tsp_app.traveloptimizer.model.RouteResponse;
 import com.mervy.root.tsp_app.traveloptimizer.model.city.City;
 
 import com.mervy.root.tsp_app.traveloptimizer.model.city.CityService;
-import com.mervy.root.tsp_app.traveloptimizer.utils.DistanceCalculator;
 import lombok.Getter;
 import lombok.Setter;
 import org.springframework.stereotype.Service;
@@ -39,46 +41,11 @@ public class TspService extends CityService{
                 selected.add(cityMap.get(name));
             }
         }
-        LinkedList<City> optimized = solveTspNearestNeighbor(selected);
-        return new RouteResponse(optimized, calculateDistance(optimized));
+        LinkedList<City> optimized = TwoOpt.solveTspTwoOpt(selected);
+        //LinkedList<City> optimized = NearestNeighbors.solveTspNearestNeighbor(selected);
+        return new RouteResponse(optimized, DistanceCitiesList.CalculateDistance(optimized));
     }
 
-    private double calculateDistance(List<City> cities){
-        double distance = 0D;
-        for(int i = 0; i < (cities.size() - 1); i++){
-            //distance += distance(cities.get(i), cities.get(i+1));
-            distance += DistanceCalculator.haversineDistance(cities.get(i).getLatitude(), cities.get(i).getLongitude(), cities.get(i+1).getLatitude(), cities.get(i+1).getLongitude());
-        }
-        return distance;
 
-    }
-
-    private LinkedList<City> solveTspNearestNeighbor(List<City> cities) {
-        if (cities.isEmpty()) return new LinkedList<>(cities);
-
-        LinkedList<City> result = new LinkedList<>();
-        Set<City> remaining = new HashSet<>(cities);
-        City current = cities.get(0);
-        result.add(current);
-        remaining.remove(current);
-
-        while (!remaining.isEmpty()) {
-            City finalCurrent = current;
-            City next = remaining.stream()
-                    .min(Comparator.comparingDouble(c -> distance(finalCurrent, c)))
-                    .orElse(null);
-            result.add(next);
-            remaining.remove(next);
-            current = next;
-        }
-
-        return result;
-    }
-
-    private double distance(City a, City b) {
-        double dx = a.getLatitude() - b.getLatitude();
-        double dy = a.getLongitude() - b.getLongitude();
-        return Math.sqrt(dx * dx + dy * dy);
-    }
 }
 

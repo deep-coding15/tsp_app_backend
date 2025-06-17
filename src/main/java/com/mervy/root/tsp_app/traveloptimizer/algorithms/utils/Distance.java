@@ -1,6 +1,8 @@
-package com.mervy.root.tsp_app.traveloptimizer.utils;
+package com.mervy.root.tsp_app.traveloptimizer.algorithms.utils;
 
-public class DistanceCalculator {
+import com.mervy.root.tsp_app.traveloptimizer.model.city.City;
+
+public class Distance {
 
     // Rayon de la Terre en kilomètres
     private static final double EARTH_RADIUS_KM = 6371.0;
@@ -33,6 +35,12 @@ public class DistanceCalculator {
         double c = 2 * Math.asin(Math.sqrt(a));
 
         return EARTH_RADIUS_KM * c;
+    }
+
+    public static double euclidienneDistance(City a, City b) {
+        double dx = a.getLatitude() - b.getLatitude();
+        double dy = a.getLongitude() - b.getLongitude();
+        return Math.sqrt(dx * dx + dy * dy);
     }
 
     public static void main(String[] args) {
